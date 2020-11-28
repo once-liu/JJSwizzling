@@ -16,6 +16,7 @@
 		5A68D6682572150C002E77CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D6672572150C002E77CB /* main.m */; };
 		5A68D6722572150C002E77CB /* JJSwizzlingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D6712572150C002E77CB /* JJSwizzlingTests.m */; };
 		5A68D67D2572150C002E77CB /* JJSwizzlingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D67C2572150C002E77CB /* JJSwizzlingUITests.m */; };
+		5A68D69325721599002E77CB /* NSObject+MethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A68D69225721599002E77CB /* NSObject+MethodSwizzling.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		5A68D6782572150C002E77CB /* JJSwizzlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JJSwizzlingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A68D67C2572150C002E77CB /* JJSwizzlingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JJSwizzlingUITests.m; sourceTree = "<group>"; };
 		5A68D67E2572150C002E77CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A68D69125721599002E77CB /* NSObject+MethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MethodSwizzling.h"; sourceTree = "<group>"; };
+		5A68D69225721599002E77CB /* NSObject+MethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MethodSwizzling.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 		5A68D6542572150A002E77CB /* JJSwizzling */ = {
 			isa = PBXGroup;
 			children = (
+				5A68D69025721582002E77CB /* JJSwizzling */,
 				5A68D6552572150A002E77CB /* AppDelegate.h */,
 				5A68D6562572150A002E77CB /* AppDelegate.m */,
 				5A68D6582572150A002E77CB /* SceneDelegate.h */,
@@ -135,6 +139,15 @@
 				5A68D67E2572150C002E77CB /* Info.plist */,
 			);
 			path = JJSwizzlingUITests;
+			sourceTree = "<group>";
+		};
+		5A68D69025721582002E77CB /* JJSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				5A68D69125721599002E77CB /* NSObject+MethodSwizzling.h */,
+				5A68D69225721599002E77CB /* NSObject+MethodSwizzling.m */,
+			);
+			path = JJSwizzling;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A68D69325721599002E77CB /* NSObject+MethodSwizzling.m in Sources */,
 				5A68D65D2572150A002E77CB /* ViewController.m in Sources */,
 				5A68D6572572150A002E77CB /* AppDelegate.m in Sources */,
 				5A68D6682572150C002E77CB /* main.m in Sources */,
